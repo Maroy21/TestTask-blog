@@ -1,0 +1,22 @@
+<h2>Article:</h2>
+<br> 
+<h1><%= @article.title %></h1>
+<div class= 'card'>
+  <p class= 'card-body'><%= @article.body %></p>
+</div>
+
+<ul style='margin-top : 1rem'>
+  <li class="btn btn-secondary"><%= link_to "Edit", edit_article_path(@article) %></li>
+  <li class="btn btn-danger"><%= link_to "Destroy", article_path(@article),
+                  method: :delete,
+                  data: { confirm: "Are you sure?" } %></li>
+</ul>
+<br>
+<h2>Comments</h2>
+<%= render @article.comments %>
+<br>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+
