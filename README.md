@@ -1,24 +1,17 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+web-приложение "Персональный блог", реализующее следующие функции:
 
-Things you may want to cover:
+* Администратор приложения может залогиниться
+* Администратор приложения может содавать, редактировать и удалять статьи
+* Гостевой пользователь должен видеть все статьи в сокращенном виде на главной странице
+* Гостевой пользователь может кликнуть на заголовок статьи и просмотреть полное содержание
 
-* Ruby version
+Авторизация работает через http_basic_authenticate_with
 
-* System dependencies
+Использован Bootstrap (стили применял криво, использовал inline стили)
 
-* Configuration
+Полезная фича: Гостевой пользователь может оставлять комментарии под статьями
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
